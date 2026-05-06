@@ -1,8 +1,8 @@
 /* Colores principales para usarlos en toda la página */
 :root {
-    --azul: #1f0ad9;
-    --blanco: #e9e8e8;
-    --gris: #bcb7b7;
+    --dorado: #d4af37;
+    --oscuro: #1a1a1a;
+    --gris: #333;
     
 }
 
@@ -10,8 +10,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--blanco);
-    color: rgb(27, 15, 117);
+    background-color: var(--oscuro);
+    color: white;
     line-height: 1.6;
 }
 
@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(rgb(177, 177, 179), rgb(255, 255, 255)), linear-gradient(45deg, #ffffff, #000000);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(110, 109, 109, 0.6)), linear-gradient(45deg, #464545, #000000);
     padding: 1rem 2rem;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .inicio-links a:hover {
-    color: var(--azul);
+    color: var(--dorado);
     transition: 2s;
 }
 
@@ -52,7 +52,7 @@ body {
 
 /* Fondo con degradado y el corte con forma de curva */
 .hero {
-    background: linear-gradient(rgb(177, 177, 179), rgb(255, 255, 255)), linear-gradient(45deg, #ffffff, #000000);
+    background: linear-gradient(rgba(133, 132, 132, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(45deg, #121111, #000000);
     height: 400px;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@ body {
     background: var(--gris); /* color del fondo*/
     padding: 20px; /* para el espacio dentro de la tageta */
     border-radius: 10px; /* esquinas del border*/
-    border-bottom: 3px solid var(--azul);/*color azul de la targeta*/
+    border-bottom: 3px solid var(--dorado);/*color dorado de la targeta*/
     transition: transform 0.3s; /*duración del movimiento de la targeta*/
 }
 
@@ -90,7 +90,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: var(--gris);
+    background: #252525;
     padding: 20px;
     border-radius: 8px;
 }
@@ -103,8 +103,8 @@ form {
 
 /* Ajustes de color y pocición del boton con animación */
 .nav {
-    background-color: var(--azul);
-    color: rgb(244, 240, 240);
+    background-color: var(--dorado);
+    color: black;
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -118,19 +118,19 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(rgb(177, 177, 179), rgb(255, 255, 255)), linear-gradient(45deg, #ffffff, #000000);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(110, 109, 109, 0.6)), linear-gradient(45deg, #464545, #000000);
     padding: 1rem 2rem;
 }
 
 .Contactanos {
     margin: 20px; 
     padding: 20px;
-    background-color: var(--gris); 
+    background-color: #333; 
     border-radius: 5px;
 }
 
 .navcontactoss {
-    background-color: var(--azul);
+    background-color: var(--oscuro);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-decoration: none;
@@ -149,6 +149,9 @@ form {
 
 .navfooter {
     padding: 13px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: rgb(255, 255, 255);
+    border-radius: 10px;    
 } 
 
 /* Para ajustar el tamaño para el móvil */
