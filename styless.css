@@ -1,0 +1,163 @@
+/* Colores principales para usarlos en toda la página */
+:root {
+    --azul: #1f0ad9;
+    --blanco: #e9e8e8;
+    --gris: #bcb7b7;
+    
+}
+
+/* Estilos básicos para todo el cuerpo de la web */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--blanco);
+    color: rgb(27, 15, 117);
+    line-height: 1.6;
+}
+
+/*Para poner el logo al lado del nombre*/
+.logo {
+    display: flex;         
+    align-items: center;   
+    gap: 10px;
+}
+
+/* personalización del menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(177, 177, 179), rgb(255, 255, 255)), linear-gradient(45deg, #ffffff, #000000);
+    padding: 1rem 2rem;
+}
+
+/* Para la lista de las paginas del menu */
+.inicio {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.inicio-links a:hover {
+    color: var(--azul);
+    transition: 2s;
+}
+
+.redes-sociales {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Fondo con degradado y el corte con forma de curva */
+.hero {
+    background: linear-gradient(rgb(177, 177, 179), rgb(255, 255, 255)), linear-gradient(45deg, #ffffff, #000000);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    clip-path: ellipse(100% 100% at 50% 0%); /* PAra darle la forma curva*/
+}
+
+/* El orden de las targetas de "Nuestro servivicio"*/
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tamaño y diseño de las cartas de "Nuestros Servicios" */
+.card {
+    background: var(--gris); /* color del fondo*/
+    padding: 20px; /* para el espacio dentro de la tageta */
+    border-radius: 10px; /* esquinas del border*/
+    border-bottom: 3px solid var(--azul);/*color azul de la targeta*/
+    transition: transform 0.3s; /*duración del movimiento de la targeta*/
+}
+
+/*Para que las tarjetas se muevan al pasar el ratón */
+.card:hover {
+    transform: translateY(-10px); /*Para que se mueva cuando pase el cursor */
+}
+
+/* La configuración para el formulario */
+form {
+    max-width: 500px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--gris);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Animación del boton de reserva aparezca al inicio */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }/* Para que se haga invisible*/
+    to { opacity: 1; transform: translateY(0); }/*Para que aparezca al abrir*/
+}
+
+/* Ajustes de color y pocición del boton con animación */
+.nav {
+    background-color: var(--azul);
+    color: rgb(244, 240, 240);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: aparecer 2s ease-in-out; /* La animación para el boton de aparecer al inicio */
+}
+
+/* PAGINA CONTACTO */
+
+.navcontactos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(177, 177, 179), rgb(255, 255, 255)), linear-gradient(45deg, #ffffff, #000000);
+    padding: 1rem 2rem;
+}
+
+.Contactanos {
+    margin: 20px; 
+    padding: 20px;
+    background-color: var(--gris); 
+    border-radius: 5px;
+}
+
+.navcontactoss {
+    background-color: var(--azul);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+.redes-footer{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 13px 50px;
+}
+
+.navfooter {
+    padding: 13px 20px;
+} 
+
+/* Para ajustar el tamaño para el móvil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .inicio-links {
+        padding: 0;
+        margin-top: 10px;
+    }
+}
